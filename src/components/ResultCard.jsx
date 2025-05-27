@@ -8,7 +8,7 @@ const ResultCard = ({ price, onReset }) => (
       onClick={onReset}
       className="px-6 py-2 bg-red-500 text-white rounded-md hover:bg-red-600"
     >
-      Reset Form
+      Try New Value
     </button>
   </div>
 );
