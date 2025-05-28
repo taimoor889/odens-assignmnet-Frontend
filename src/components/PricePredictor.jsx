@@ -29,8 +29,8 @@ const PricePredictor = () => {
         try {
             const res = await axios.post(URL, form);
             setPredictedPrice(res.data.predicted_price);
-        } catch (error) {
-           console.log(error)
+        } catch {
+           alert("Unpredictable entries detected. Please check your inputs")
         } finally {
             setLoading(false);
         }
